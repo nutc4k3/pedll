@@ -16,7 +16,7 @@ def check():
 def disable():
     print( "Disabling protections")
     pe.OPTIONAL_HEADER.DllCharacteristics = 32768
-    pe.write(filename='zoom_patched.exe')
+    pe.write(filename='NEW_FILENAME.exe')
     print("Pronto --> " + hex(pe.OPTIONAL_HEADER.DllCharacteristics))
 
 check()
